@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>// 1nv4l1d_ -b1n4ry__</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="search">
+  <form action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
+    <input type="text" onclick="blinker()" name="q" placeholder="Search">
+  </form>
+</div>
+<div id="wrapper"></div>
+<div class="floatBox">
+  <div class="lists">
+    <ul class="list1">
+      <li><a id="undLne" href="https://inbox.google.com" target="_blank">mail</a></li>
+      <li><a id="undLne" href="https://gmx.com" target="_blank">gmx</a></li>
+      <li><a id="undLne" href="https://reddit.com" target="_blank">redd</a></li>
+    </ul>
+    <ul class="list2">
+      <li><a id="undLne" href="https://stackoverflow.com/" target="_blank">stack</a></li>
+      <li><a id="undLne" href="https://searx.privatenet.cf/" target="_blank">searx</a></li>
+      <li><a id="undLne" href="https://github.com" target="_blank">githb</a></li>
+    </ul>
+    <ul class="list3">
+      <li><a id="undLne" href="https://sourcegraph.com/search" target="_blank">source</a></li>
+      <li><a id="undLne" href="http://unsplash.com/" target="_blank">splash</a></li>
+      <li><a id="undLne" href="https://youtube.com" target="_blank">utube</a></li>
+    </ul>
+  </div>
+</div>
+<p class="f">
+  <!-- <a target="_blank" href="http://www.jeremieboulay.fr">@Jeremboo</a> -->
+  <!-- <br /> ┗|｀O´|┛ -->
+</p>
+<!-- partial -->
+  <script  src="./script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+ <script>
+   function blinker() {
+
+if ($('input[type=text]').attr('placeholder')) {
+  // get the placeholder text
+  $('input[type=text]').attr('placeholder', '');
+} else {
+  $('input[type=text]').attr('placeholder', 'Search');
+}
+
+setTimeout(blinker, 1000);
+
+}
+ </script>
+</body>
+</html>
