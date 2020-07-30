@@ -154,7 +154,7 @@ li {
 	transition: all 0s ease;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #9a9b99;
+  color: #c2c2c2;
   opacity: 1; /* Firefox */
   animation: blink-animation 1s steps (10, start) infinite; 
 }
@@ -167,11 +167,14 @@ li {
 }
 input {
 	border:none;
-	border-bottom: 2px solid #303030;
+  border-bottom: 2px solid #D8FF17;
+  opacity: 0.4;
 	min-width: 505px;
 	padding-bottom: 10px;
 	background-color: transparent;
-	color: #383636;
+	color: #adadad;
 	outline: 0;
 	margin-bottom: 20px;
 }
+
+
