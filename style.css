@@ -11,19 +11,7 @@ html {
   font-weight: lighter;
   color: #fff8f0;
 }
-.f {
-  position: fixed;
-  bottom: 5px;
-  right: 15px;
-  font-family: 'Arial';
-  font-size: 0.7rem;
-  color: #fff;
-  text-align: center;
-}
-.f a {
-  font-size: 0.8rem;
-  color: #fff;
-}
+
 #wrapper {
   width: 518px;
   height: 165px;
