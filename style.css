@@ -177,4 +177,8 @@ input {
 	margin-bottom: 20px;
 }
 
+.main {
+display: flex;
+}
+
 
