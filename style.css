@@ -11,19 +11,7 @@ html {
   font-weight: lighter;
   color: #fff8f0;
 }
-.f {
-  position: fixed;
-  bottom: 5px;
-  right: 15px;
-  font-family: 'Arial';
-  font-size: 0.7rem;
-  color: #fff;
-  text-align: center;
-}
-.f a {
-  font-size: 0.8rem;
-  color: #fff;
-}
+
 #wrapper {
   width: 518px;
   height: 165px;
@@ -81,19 +69,15 @@ a:hover {
 }
 
 .floatBox {
-  left: 870px;
-	right: 0;
-	top: 225px;
-	bottom: 0;
-  width: 518px;
-  height: 165px;
-  position: absolute;
+  margin-left: 10%;
+  margin-top: 4%;
+
 }
 
 .lists {
-	position: absolute;
-	margin-top: 100px;
-	right: 55px;
+	display: flex;
+	margin-left: 854px;
+	margin-top:40px;
 }
 
 ul.list1 {
@@ -159,11 +143,9 @@ li {
   animation: blink-animation 1s steps (10, start) infinite; 
 }
 .search {
-  left: 505px;
-  right: 0px;
-  top: 230px;
-  bottom: 0px;
-  position: absolute;
+	display: flex;
+	justify-content: center;
+	margin-top: 15%;
 }
 input {
 	border:none;
@@ -177,4 +159,6 @@ input {
 	margin-bottom: 20px;
 }
 
-
+.main {
+display: flex;
+}
