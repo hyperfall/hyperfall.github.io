@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <title>// 1nv4l1d_ -b1n4ry__</title>
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="./assets/icon.png"/>
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <div class="search">
   <form action="https://www.google.com/search" method="get" target="_blank" autocomplete="off">
-    <input type="text" onclick="blinker()" name="q" placeholder="Search">
+    <input type="text" name="q" placeholder="Search" "autofocus">
   </form>
 </div>
+  <div class="main">
 <div id="wrapper"></div>
 <div class="floatBox">
   <div class="lists">
@@ -32,27 +33,9 @@
       <li><a id="undLne" href="https://youtube.com" target="_blank">utube</a></li>
     </ul>
   </div>
+    </div>
 </div>
-<p class="f">
-  <!-- <a target="_blank" href="http://www.jeremieboulay.fr">@Jeremboo</a> -->
-  <!-- <br /> ┗|｀O´|┛ -->
-</p>
 <!-- partial -->
   <script  src="./script.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
- <script>
-   function blinker() {
-
-if ($('input[type=text]').attr('placeholder')) {
-  // get the placeholder text
-  $('input[type=text]').attr('placeholder', '');
-} else {
-  $('input[type=text]').attr('placeholder', 'Search');
-}
-
-setTimeout(blinker, 1000);
-
-}
- </script>
 </body>
 </html>
