@@ -73,7 +73,7 @@ class LetterShuffler {
     // Regex Thank to @milesmanners !
     // https://codepen.io/milesmanners/
     if (/[+\-| ]/.test(letter)) {
-      this.wrapper.classList.add('purple')
+      this.wrapper.classList.add('lime')
     } else {
       this.duration *= 2.1;
     }
@@ -162,7 +162,7 @@ const WORDS = [
   `                                     `,
   `                                     `,
   `                                     `,
-  `|              ${h}:${m}:${s}               |`,
+  `|              ${h}:${m}:${s}              |`,
   `                                     `,
   `                                     `,
   `                                     `,
@@ -218,7 +218,26 @@ setInterval(() => {
   show = !show;
 }, 4000);
 
+var d = document;
 
-// Random text shuffle: https://codepen.io/SaschaSigl/pen/woGYKJ?q=shuffle&order=popularity&depth=everything&show_forks=false
-// Tuto shuffle letters effect: https://tutorialzine.com/2011/09/shuffle-letters-effect-jquery
-// Check wave: http://lab.hakim.se/checkwave/
+// not using this at the moment but might do later for graceful degradation...
+function supports_html5_storage() {
+  try {
+    return 'localStorage' in window && window['localStorage'] !== null;
+  } catch (e) {
+    return false;
+  }
+}
+
+d.addEventListener('DOMContentLoaded', function(){
+
+  var savedContent = localStorage.getItem("notepadcontent");
+  if(savedContent != null){
+    d.getElementById("notepad").value = savedContent;
+  }
+ 
+ 
+ d.getElementById("notepad").onkeyup = function(){
+  var data = d.getElementById("notepad").value;  localStorage.setItem("notepadcontent", data);
+  }
+});

@@ -12,6 +12,29 @@ html {
   color: #fff8f0;
 }
 
+img {
+	transition: filter .1s ease-in-out;
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(100%); /* FF 35+ */
+  }
+  img:hover {
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+	filter: grayscale(0%); /* FF 35+ */
+  }
+
+  textarea {
+	width: 25%;
+	height: 100%;
+	background: none;
+	color: rgb(102, 102, 102);
+	font-size: 1em;
+	position: absolute;
+	padding: 1em;
+	border: 0;
+	resize: none;
+	box-sizing: border-box;
+  }
+
 #wrapper {
   width: 518px;
   height: 165px;
@@ -47,10 +70,10 @@ html {
 #wrapper span:hover:after {
   opacity: 1;
 }
-#wrapper span.purple {
+#wrapper span.lime {
   color: #7D7D7D;
 }
-#wrapper span.purple:hover:after {
+#wrapper span.lime:hover:after {
   background-color: #D8FF17;
 }
 a {
@@ -69,8 +92,8 @@ a:hover {
 }
 
 .floatBox {
-  margin-left: 10%;
-  margin-top: 4%;
+  margin-left: 11%;
+  margin-top: -1%;
 
 }
 
@@ -142,14 +165,18 @@ li {
   opacity: 1; /* Firefox */
   animation: blink-animation 1s steps (10, start) infinite; 
 }
+
+  ::-moz-placeholder { color:rgb(49, 49, 49);
+ }
+
 .search {
 	display: flex;
 	justify-content: center;
-	margin-top: 15%;
+	margin-top: 16%;
 }
 input {
 	border:none;
-  border-bottom: 2px solid #D8FF17;
+  border-bottom: 2px solid #a5a5a5;
   opacity: 0.4;
 	min-width: 505px;
 	padding-bottom: 10px;
